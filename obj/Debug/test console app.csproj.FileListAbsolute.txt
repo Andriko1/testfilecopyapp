@@ -1,0 +1,7 @@
+D:\Users\andre\Desktop\test console app\bin\Debug\test console app.exe.config
+D:\Users\andre\Desktop\test console app\bin\Debug\test console app.exe
+D:\Users\andre\Desktop\test console app\bin\Debug\test console app.pdb
+D:\Users\andre\Desktop\test console app\obj\Debug\test console app.csproj.AssemblyReference.cache
+D:\Users\andre\Desktop\test console app\obj\Debug\test console app.csproj.CoreCompileInputs.cache
+D:\Users\andre\Desktop\test console app\obj\Debug\test console app.exe
+D:\Users\andre\Desktop\test console app\obj\Debug\test console app.pdb
