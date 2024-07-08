@@ -2,6 +2,7 @@
 using System.IO;
 using System.Diagnostics;
 using System.Reflection;
+using System.ComponentModel;
 
 namespace test_console_app
 {
@@ -70,7 +71,7 @@ namespace test_console_app
 						}
 						catch (Exception e)
 						{
-							Console.WriteLine(e);
+							Console.WriteLine(e.Message);
 						}
 					}
 				}
@@ -93,9 +94,17 @@ namespace test_console_app
 				{
 					Process.Start(newpath);
 				}
-				catch (Exception e)
+				catch (InvalidOperationException ioe)
 				{
-					Console.WriteLine(e);
+					Console.WriteLine(ioe.Message);
+				}
+				catch (Win32Exception w32e)
+				{
+					Console.WriteLine(w32e.Message);	//This error is most likely the one to pay attention to for the issue
+				}
+				catch (PlatformNotSupportedException pnse)
+				{
+					Console.WriteLine(pnse.Message);
 				}
 				Console.WriteLine("\nPress any key to exit...");
 				Console.ReadKey(); // Waits for a key press from the user
